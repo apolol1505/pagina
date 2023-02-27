@@ -1,0 +1,29 @@
+
+html{
+    background-image:url('image/restaurantBackground.gif') ;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: chartreuse;
+    color: white;
+    padding: 3rem 3rem;
+    border-radius: 2ch;
+}
+header h1{
+    font-size: 5.5rem;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.caja {
+
+    border: 1px solid black;
+    border-radius: 2ch;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+}
+

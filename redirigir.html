@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orden de Comida</title>
+  </head>
+  <body>
+    <h1>Orden de Comida</h1>
+    
+    <h2>Menú</h2>
+    <ul>
+      <li>
+        <img src="hamburguesa.jpg" alt="Hamburguesa">
+        <p>Hamburguesa - $5.00</p>
+        <label>
+          <input type="checkbox" name="pedido[]" value="hamburguesa"> Agregar a mi pedido
+        </label>
+      </li>
+      <li>
+        <img src="pizza.jpg" alt="Pizza">
+        <p>Pizza - $8.00</p>
+        <label>
+          <input type="checkbox" name="pedido[]" value="pizza"> Agregar a mi pedido
+        </label>
+      </li>
+      <li>
+        <img src="ensalada.jpg" alt="Ensalada">
+        <p>Ensalada - $3.00</p>
+        <label>
+          <input type="checkbox" name="pedido[]" value="ensalada"> Agregar a mi pedido
+        </label>
+      </li>
+    </ul>
+    
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo"><br>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono"><br>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion"><br>
+
+      <input type="submit" value="Enviar Pedido">
+    </form>
+  </body>
+</html>
+
+
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Titulo-->
+    <header>
+        <h1 id = "titulo">Restaurant</h1>
+    </header>
+  <!--Menu de comida-->
+<ul>
+  <li>
+    <div class="caja">
+      <h2>Desayuno</h2>
+      <ul>
+        <li>
+          <h3>Tostadas con cafe</h3>
+          <p>Pan, queso parmesano, café</p>
+          <span class="precio">$2</span>
+        </li>
+        <li>
+          <h3>Huevos Revueltos</h3>
+          <p>Huevos, mantequilla</p>
+          <span class="precio">$12</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li>
+    <div class="caja">
+      <h2>Almuerzos</h2>
+      <ul>
+        <li>
+          <h3>Bistec</h3>
+          <p>Bistec, vegetales al vapor.</p>
+          <span class="precio">$20</span>
+        </li>
+        <li>
+          <h3>Ceviche</h3>
+          <p>Chifle, pescado </p>
+          <span class="precio">$18</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li>
+    <div class="caja">
+      <h2>Meriendas</h2>
+      <ul>
+        <li>
+          <h3>Flan de caramelo</h3>
+          <p>Flan casero de caramelo.</p>
+          <span class="precio">$8</span>
+        </li>
+        <li>
+          <h3>Pie de manzana</h3>
+          <p>Pie de manzana con helado de vainilla.</p>
+          <span class="precio">$10</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>
+<!--Pie de pagina-->
+    <!--Scrips animacion-->
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.navbar', {
+          duration: 2000,
+          origin: 'bottom'
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.header-content-right', {
+          duration: 2000,
+          origin: 'right',
+          distance: '300px'
+      });
+  
+      //Animacion Cambio
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+  
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+              });
+          });
+      });
+  </script>
+</body>
+</html>
+
+    <!--menu
+    Almuerzo
+    -arroz con camarones
+    - arroz con menestra de lenteja
+    -->
